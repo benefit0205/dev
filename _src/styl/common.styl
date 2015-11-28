@@ -1,0 +1,80 @@
+// 変数
+tmWhite = #ffffff;
+tmBlack = #000000;
+tmGrey = #333333;
+tmLGrey = #8c9398;
+tmBlue = #0093cb;
+
+body {
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	color: tmGrey;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.share {
+	max-width: 600px;
+	height: 100px;
+	margin: 0 auto;
+	-webkit-filter: url("#goo");
+	filter: url("../share.html#goo");
+	position: relative;
+}
+.share-button,
+.share-toggle-button {
+	position: absolute;
+	display: inline-block;
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	margin-left: -40px;
+	margin-top: -40px;
+	background: #ccc;
+	text-align: center;
+	color: tmWhite;
+	border: none;
+	outline: none;
+}
+.share-button:hover,
+.share-toggle-button:hover {
+	color: tmWhite;
+}
+.share-button {
+	font-size: 30px;
+	background: #737070;
+	-webkit-transform: scale(0.95, 0.95);
+	transform: scale(0.95, 0.95);
+	color: #222;
+}
+a.share-button {
+	color: #3D4444;
+}
+a.share-button:hover,
+a.share-button:focus {
+	color: #dfd7d7;
+}
+.share-toggle-button {
+	z-index: 9;
+	background: #666;
+	font-size: 20px;
+}
+.share-items {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.share-item {
+	display: inline-block;
+}
