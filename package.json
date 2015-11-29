@@ -16,7 +16,7 @@
     "gulp-using": "0.0.1",
     "gulp-cached": "~1.1.0",
     "gulp-remember": "~0.3.0",
-    "gulp-uglify": "~1.2.0",
+    "gulp-uglify": "~1.5.1",
     "gulp-pleeease": "~1.2.0",
     "gulp-csscomb": "~3.0.6",
     "underscore": "^1.8.3",
