@@ -7,7 +7,7 @@ tmBlue = #0093cb;
 
 @media screen and (min-width : 769px){
 	.nav-sp,.tcon {
-		display: none;
+		display: none !important;
 	}
 	// mv
 	.mv-contents__ttl {
@@ -30,7 +30,7 @@ tmBlue = #0093cb;
 	}
 	#particles-js{
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 		background-color: tmWhite;
 		padding: 0 10px;
 		box-sizing: border-box;
@@ -41,15 +41,16 @@ tmBlue = #0093cb;
 	}
 	.content {
 		position: absolute;
-		top: 330px;
+		top: 50%;
 		left: 50%;
 		margin-left: -5px;
 	}
 	.mv-contents__nav {
 		position: absolute;
 		width: 100%;
-		top: 420px;
+		top: 50%;
 		left: 0;
+		margin-top: 75px;
 		text-align: center;
 		z-index: 1;
 
