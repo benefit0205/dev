@@ -67,9 +67,9 @@ gulp.task('csscomb', function(){
 
 // 画像圧縮タスク *納品時に行うこと
 gulp.task('optimizeImg', function(){
-	gulp.src(dir.src + '/assets/img_noncompress_pc/*.+(jpg|jpeg|png|gif)')
+	gulp.src(dir.src + '/images/*.+(jpg|jpeg|png|gif)')
 		.pipe(pngquant({quality: '60-80', speed: 1})())
-		.pipe(gulp.dest(dir.dist));
+		.pipe(gulp.dest(dir.src + '/images/'));
 });
 
 // js min
@@ -107,28 +107,4 @@ gulp.task( 'iconfont', function () {
 		} )
 		.pipe( gulp.dest( dir.src + '/build/fonts/' ) );
 } );
-
-// distディレクトリにコピー
-gulp.task('copy', function(){
-	return gulp.src([
-		dir.src + '/{,**/}*.html',
-		dir.src + '/{,**/}*.js',
-		dir.src + '/{,**/}*.css'
-	])
-	.pipe(gulp.dest(dir.dist));
-});
-
-// distディレクトリ内を削除
-gulp.task('clean-dist', function(){
-	return gulp.src([
-		dir.dist + '/{,**/}*.html',
-		dir.dist + '/css',
-		dir.dist + '/js',
-		dir.dist + '/img'
-	],{read: false})
-		.pipe(clean());
-});
-
-// リリース用ビルド
-
 
