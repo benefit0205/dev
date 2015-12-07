@@ -205,7 +205,6 @@
 	<p class="toTop jscTop"><a href="#"><i class="fa fa-angle-double-up"></i></a></p>
 </section>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="http://www.google.com/jsapi"></script>
 <script src="./js/min/common.min.js"></script>
 </body>
 </html>
