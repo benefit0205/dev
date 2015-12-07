@@ -151,7 +151,7 @@
 <section class="blog-contents">
 	<h2 class="blog-contents__ttl" id="blog">blog</h2>
 	<div class="blog-contents__inner">
-		<ul class="blog-contents__inner__list jscFeed" id="feed">
+		<ul class="blog-contents__inner__list">
 			<?php
             	require_once "./Feed.php";
             	$feed = new Feed;
